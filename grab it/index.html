@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grab It</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <section id="page">
+        <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav__logo">Grab It</a>
+                <ul class="nav__menu">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#components" class="nav__link">Components</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
+        <nav class="navigation">
+            <div class="nav__components">
+                <a href="#comp__avatar">Avatar</a>
+                <a href="#comp__badge">Badge</a>
+                <a href="#comp__alerts">Alerts</a>
+            </div>
+        </nav>
+        <main class="main">
+            <div class="main__components">
+               <div class="components">
+                    <h1 class="comp__heading" id="comp__avatar">Avatar</h1>
+                    <br/>
+                    <h3>Image Avatars</h3>
+                    <div class="avatars">
+                        <img class="avatar1" src="https://assets-global.website-files.com/5ec7dad2e6f6295a9e2a23dd/5edfa7c6f978e75372dc332e_profilephoto1.jpeg" alt="avatar1"/>
+                        <img class="avatar2" src="https://assets-global.website-files.com/5ec7dad2e6f6295a9e2a23dd/5edfa7c6f978e75372dc332e_profilephoto1.jpeg" alt="avatar2"/>
+                        <img class="avatar3" src="https://assets-global.website-files.com/5ec7dad2e6f6295a9e2a23dd/5edfa7c6f978e75372dc332e_profilephoto1.jpeg" alt="avatar3"/>
+                    </div>
+                    <br/>
+                    <h3>Letter Avatars</h3>
+                    <div class="aplhabetical__avatars">
+                        <h1 class="avatar1">A</h1>
+                        <h1 class="avatar2">J</h1>
+                        <h1 class="avatar3">S</h1>
+                    </div>
+                    <h1 class="comp__heading" id="comp__badge">Badge</h1>
+                    <br/>
+                    <h3>Badge on avatars</h3>
+                    <br/>
+                    <div class="avatar__Badge">
+                       <div class="badge">
+                        <img class="avatar1" src="https://assets-global.website-files.com/5ec7dad2e6f6295a9e2a23dd/5edfa7c6f978e75372dc332e_profilephoto1.jpeg" alt="avatar"/>
+                        <div class="badge1"></div>
+                       </div>
+                       <div class="badge">
+                        <h1 class="avatar2">J</h1>
+                        <div class="badge2">–</div>
+                       </div>
+                       <img class="avatar1" id="circle__badge" src="https://assets-global.website-files.com/5ec7dad2e6f6295a9e2a23dd/5edfa7c6f978e75372dc332e_profilephoto1.jpeg" alt="avatar"/>
+                    </div>
+                    <br/>
+                    <h3>Badge on icons</h3>
+                    <br/>
+                    <div class="icon__badge">
+                        <div class="icon__badge__container">
+                            <i class="fa fa-envelope fa-4x" aria-hidden="true"></i>
+                            <span class="envelope">25</span>
+                        </div>
+                        <div class="icon__badge__container">
+                            <i class="fa fa-bell fa-4x" aria-hidden="true" style="color:#d90429" ></i>
+                            <span class="bell">9</span>
+                        </div>
+                        <div class="icon__badge__container">
+                            <i class="fa fa-shopping-cart fa-4x" aria-hidden="true" ></i>
+                            <span class="cart">6</span>
+                        </div>
+                    </div>
+                    <br/>
+                    <h1 class="comp__heading" id="comp__alerts">Alerts</h1>
+                    <br/>
+                    <div class="alerts">
+                        <div class="success__alert">
+                            <div class="success__icon">
+                                <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4C12.76,4 13.5,4.11 14.2, 4.31L15.77,2.74C14.61,2.26 13.34,2 12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0, 0 22,12M7.91,10.08L6.5,11.5L11,16L21,6L19.59,4.58L11,13.17L7.91,10.08Z"></path></svg>
+                            </div>
+                            <div class="success__info">
+                                <strong>Success!</strong>
+                                <div class="success__msg">
+                                    This is success alert   
+                                </div> 
+                            </div>
+                            <div class="closebtn" onclick="this.parentElement.style.display='none';">&times;</div>
+                        </div>
+                    </div>
+
+               </div>
+
+            </div>
+        </main>
+        <footer class="footer">Foot</footer>
+    </section>
+</body>
+<script src="JavaScript/main.js"></script>
+</html>
+
