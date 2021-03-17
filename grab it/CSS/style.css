@@ -27,19 +27,21 @@ a{
 
 #page{
     display: grid;
-    width:100%;
+    /* max-width:800px; */
+    width:100%;  
     height:100%;
     grid-template-areas: "header header"
                         "navigation main"
                         "footer footer";
-    grid-template-rows: 0.25fr 3fr 1fr;
-    grid-template-columns: 200px 4.5fr;
+    grid-template-rows: 50px 2fr 1fr;
+    grid-template-columns: 250px 4.5fr;
 }
 
 #page .header{
     grid-area:header;
     border-bottom: 1px solid var(--secondary-color);
     background-color: var(--primary-color);
+    width:100% ;
     /* color: var(--font-color); */
 }
 
@@ -149,6 +151,7 @@ a{
 
 #page .navigation{
     grid-area:navigation;
+    border-bottom:1px solid var(--font-color);
 }
 
 .nav__components{
@@ -160,7 +163,10 @@ a{
 
 #page .main{
     grid-area:main;
+    width:100%;
+    padding:4rem;
     border-left:1px solid var(--font-color);
+    border-bottom:1px solid var(--font-color);
 }
 
 .main__components{
@@ -171,7 +177,8 @@ a{
 
 .avatars{
     display: flex;
-    width:400px;
+    max-width:600px;
+    /* width:400px; */
     justify-content:space-between;
     align-items:center;
     /* border-bottom:1px solid var(--font-color); */
@@ -197,7 +204,8 @@ a{
 /* Alphabetical avatars */
 .aplhabetical__avatars{
     display: flex;
-    width:400px;
+    /* width:400px; */
+    max-width:600px;
     justify-content:space-between;
     align-items:center; 
 }
@@ -220,6 +228,7 @@ a{
     justify-content: center;
     align-items: center;
     border-radius:50%;
+    font-size:x-large;
 }
 
 .aplhabetical__avatars>.avatar3{
@@ -230,6 +239,7 @@ a{
     justify-content: center;
     align-items: center;
     border-radius:50%;
+    font-size: xx-large;
 }
 
 /* Badge on avatars */
@@ -237,6 +247,7 @@ a{
     display:flex;
     justify-content: space-between;
     align-items: center;
+    max-width:600px;
 }
 .badge{
     height:80px;
@@ -295,6 +306,7 @@ a{
     display: flex;
     justify-content:space-between;
     align-items:center;
+    max-width:600px;
 }
 
 /* top/bottom prop of position works only when the parent has height */
@@ -341,6 +353,52 @@ a{
 
 
 /* Alerts */
+
+/* Error alert */
+.error__alert{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: rgb(253, 236, 234);
+    padding:1rem;
+    color:rgb(97, 26, 21);
+    margin: 8px 0px; 
+}
+.error__icon{
+    fill:#f44336;
+    width:2em;
+    height:2em;
+}
+/* Warning Alert */
+.warning__alert{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: rgb(255 244 229);
+    padding:1rem;
+    color:rgb(102 60 0);
+    margin: 8px 0px; 
+}
+.warning__icon{
+    fill:#ff9800;
+    width:2em;
+    height:2em;
+}
+/* Info Alert */
+.info__alert{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: rgb(232, 244, 253);
+    padding:1rem;
+    color:rgb(13, 60, 97);
+    margin: 8px 0px;  
+}
+.info__icon >svg{
+    fill:#2196f3;
+    width:2em;
+    height:2em;
+}
 /* Success Alert */
 .success__alert{
     display: flex;
@@ -355,6 +413,13 @@ a{
     width:2em;
     height:2em;
 }
+
+.info{
+    padding: 8px 0;
+}
+.msg{
+    margin-top:5px;
+}
 .closebtn{
     font-weight: bold;
     align-self: flex-start;
@@ -366,6 +431,169 @@ a{
     color: black;
   }
 
+  /* Button */
+  /* Contained Button */
+  .contained__button{
+      display: flex;
+      align-items: center;
+  }
+  .btn{
+    padding:1rem;
+    border-radius: 5px;
+    font-size: large;
+    font-weight: bold;
+    margin-left:3rem;
+    cursor:pointer;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+  }
+
+  .primary__button:hover {
+    color:#fae1dd;
+  }
+  .primary__button{
+    width:85px;
+      background-color: var(--primary-color);
+      color:var(--ow-font-color);
+  }
+
+  .btn+.secondary__button{
+      width:11rem;
+  }
+  .secondary__button:hover{
+      color:#e2eafc;
+  }
+  .secondary__button{
+    background-color: var(--secondary-color);
+    color:var(--ow-font-color);
+  }
+
+/* outlined__button */
+.outlined__button{
+    display: flex;
+    align-items: center;
+}
+
+.outlined__button>.primary__button{
+    background-color: #f8f0ee;
+    color:var(--primary-color);
+    border:2px solid var(--primary-color);
+}
+
+.outlined__button>.secondary__button{
+    background-color: #e2eafc;
+    color:var(--secondary-color);
+    border:2px solid var(--secondary-color);
+}
+/* Links */
+.links{
+    display: flex;
+    align-items:center;
+}
+.link{
+    padding:1rem;
+    border-radius: 5px;
+    font-size: large;
+    font-weight: bold;
+    margin-left:3rem;
+    cursor:pointer;
+}
+.primary__link{
+    width:85px;
+    background-color: var(--primary-color);
+    color:var(--ow-font-color);
+}
+.secondary__link{
+    width:11rem;
+    color:var(--primary-color);
+    background-color: var(--ow-font-color);
+    border:2px solid var(--primary-color);
+}
+/* floting action button */
+.floating__action__button{
+   width: 70px;
+   height: 70px;
+   background-color: var(--primary-color);
+   border-radius: 50%;
+   box-shadow: 0 6px 10px 0 #666;
+   transition: all 0.1s ease-in-out;
+   color:var(--ow-font-color);
+   
+   font-size: 20px;
+   color: white;
+   text-align: center;
+   line-height: 70px;
+
+   position: fixed;
+   right: 50px;
+   bottom: 50px;
+}
+
+.floating__action__button:hover {
+    box-shadow: 0 6px 14px 0 #666;
+    transform: scale(1.1);
+ }
+
+/* Cards */
+/* Vertical Card */
+ .card{
+     /* border:1px solid black; */
+     width:315px;
+     height:500px;
+     
+ }
+ .card:hover{
+    box-shadow:5px 10px 10px 7px #888888;
+ }
+ .card__description{
+    margin:0;
+    padding:1rem 2rem;
+    background-color: var(--ow-font-color);
+ }
+ 
+ .details{
+     color:var(--primary-color);
+ }
+
+ /* card badge */
+ .badge__container{
+     position: relative;
+ }
+.card__badge{
+    background-color: rgb(236, 213, 213);
+    display:inline-block;
+    padding:5px 10px;
+    border-top-right-radius:15px;
+    border-bottom-right-radius: 15px;
+    position:absolute;
+    bottom:38rem;
+}
+
+/* horizontal card with over lay */
+.card__horizontal{
+    width: 400px;
+    height:380px;
+}
+.card__horizontal:hover{
+    box-shadow:5px 10px 10px 7px #f1cae2;
+}
+.horiztal__card{
+    width:400px;
+    height:300px;
+}
+.card__overlay{
+    position:relative;
+}
+.overlay__text{
+    position:absolute;
+    bottom:130px;
+    left:30px;
+    /* right:2px; */
+}
+
+
+
+
+/* Footer */
 #page .footer{
     grid-area:footer;
 }
