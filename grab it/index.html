@@ -33,11 +33,13 @@
         </header>
         <nav class="navigation" id="nav__components">
             <div class="nav__components" >
-                <a href="#comp__avatar">Avatar</a>
-                <a href="#comp__badge">Badge</a>
-                <a href="#comp__alerts">Alerts</a>
-                <a href="#comp__button">Button</a>
-                <a href="#comp__cards">Cards</a>
+                <a id="nav__components" class="nav_avatar" href="#comp__avatar">Avatar</a>
+                <a id="nav__components" class="nav__badge" href="#comp__badge">Badge</a>
+                <a id="nav__components" class="nav__alerts" href="#comp__alerts">Alerts</a>
+                <a id="nav__components" class="nav__button" href="#comp__button">Button</a>
+                <a id="nav__components" class="nav__cards" href="#comp__cards">Cards</a>
+                <a id="nav__components"  class="nav__alerts" href="#comp__responsive">Responsive Images</a>
+                <a id="nav__components"  class="nav__modal" href="#comp__modal">Modal</a>
             </div>
         </nav>
         <main class="main">
@@ -244,7 +246,7 @@
                     <br/>
                     <h3>Horizontal card with dismisss button</h3>
                     <br/>
-                    <div class="card__horizontal">
+                    <div class="card__horizontal dismiss">
                         <div class="thumbnail">
                             <img class="horiztal__card" src="https://www.designyourway.net/blog/wp-content/uploads/2018/11/pastel-background-goo-1250x834.jpg"
                                 alt="bag" />
@@ -257,15 +259,56 @@
                             <p>Description about the card</p>
                             <p class="details"><small>Additional Details</small></p>
                         </div>
+                        <div class="closebtn" onclick="this.parentElement.style.display='none';">&times;</div>
                     </div>
-                    
-               </div>
+                    <br/>
+                    <h3>Text only card</h3>
+                    <br/>
+                    <div class="text__card">
+                        <div class="text__content">
+                            <h3>Card Title</h3>
+                            <h4>Card Sub-title</h4>
+                            <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum inventore ducimus rem perspiciatis cumque provident. Dolore non dolor sequi? Corporis natus consequuntur dicta error temporibus eveniet distinctio, vitae pariatur nihil!
+                            </p>
+                        </div>
+                    </div>
+                    <br/>
+                    <br/>
+                    <h1 class="comp__heading" id="comp__responsive">Responsive Image</h1>
+                    <br/>
+                    <h3>Responsive Card</h3>
+                    <br/>
+                    <img class="responsive__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAk7KuaE0SPiI78uVBu-Yl4WYi1hwpRgmKpg&usqp=CAU" alt="resp_img">
+                    <br/>
+                    <br/>
+                    <h3>Responsive rounded image</h3>
+                    <br/>
+                    <img class="round__img" src="https://assets-global.website-files.com/5ec7dad2e6f6295a9e2a23dd/5edfa7c6f978e75372dc332e_profilephoto1.jpeg" alt="avatar3"/>
+                    <br/>
+                    <br/>
+                    <h1 class="comp__heading" id="comp__modal">Modal</h1>
+                    <br/>
+                    <!-- Trigger/Open The Modal -->
+                    <button id="openBtn">Live Demo Modal</button>
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal__content">
+                        <span class="close">&times;</span>
+                        <h1 class="modal__text">Modal Title</h1>
+                        <p class="modal__text">Some text in the Modal..</p>
+                        <p class="modal__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum molestias voluptas magnam vel pariatur totam, ducimus explicabo nemo doloribus, repellat quos consequuntur aliquid tenetur quod beatae corrupti rem, ea reprehenderit!</p>
+                    </div>
+                </div>
+
+            </div>
                
             </div>
         </main>
         <footer class="footer">Foot</footer>
     </section>
 </body>
+<script src="JavaScript/modal.js"></script>
 <script src="JavaScript/main.js"></script>
 </html>
-
