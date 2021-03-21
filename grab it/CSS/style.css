@@ -185,6 +185,7 @@ a{
     display:flex;
     justify-content:flex-start;
     align-items:flex-start;
+    flex-wrap:wrap;
 }
 
 .avatars{
@@ -197,12 +198,12 @@ a{
 }
 
 /* Image avatars */
-.avatars>.avatar1{
+.avatars>.avatar_small{
     width:50px;
     height:50px;
     border-radius: 50%;
 }
-.avatars>.avatar2{
+.avatars>.avatar_medium{
     width:75px;
     height:75px;
     border-radius: 50%;
@@ -222,7 +223,7 @@ a{
     align-items:center; 
 }
 
-.aplhabetical__avatars>.avatar1{
+.aplhabetical__avatars>.avatar_small{
     background-color: #80ffdb;
     width:50px;
     height:50px;
@@ -232,7 +233,7 @@ a{
     border-radius:50%;
 }
 
-.aplhabetical__avatars>.avatar2{
+.aplhabetical__avatars>.avatar_medium{
     background-color: #56cfe1;
     width:75px;
     height:75px;
@@ -265,7 +266,7 @@ a{
     height:80px;
 }
 /* top and bottom works only when you have a fixed height */
-.avatar__Badge .avatar1{
+.avatar__Badge .avatar_small{
     width:75px;
     height:75px;
     border-radius: 50%;
